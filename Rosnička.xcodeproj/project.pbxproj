@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3329407F9745EF3E41A1DF00 /* Pods_Rosnic_ka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1939CF301201DE0A4F423 /* Pods_Rosnic_ka.framework */; };
 		F647ECE31F4C27DE00747966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F647ECE21F4C27DE00747966 /* AppDelegate.swift */; };
 		F647ECE51F4C27DE00747966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F647ECE41F4C27DE00747966 /* ViewController.swift */; };
 		F647ECE81F4C27DE00747966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F647ECE61F4C27DE00747966 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417ABEDC24BE43E19F024FB6 /* Pods-Rosnička.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rosnička.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rosnička/Pods-Rosnička.debug.xcconfig"; sourceTree = "<group>"; };
+		AAD1C478BA4CCACF5CA8BD24 /* Pods-Rosnička.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rosnička.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rosnička/Pods-Rosnička.release.xcconfig"; sourceTree = "<group>"; };
+		D2C1939CF301201DE0A4F423 /* Pods_Rosnic_ka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rosnic_ka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F647ECDF1F4C27DE00747966 /* Rosnička.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rosnička.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F647ECE21F4C27DE00747966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F647ECE41F4C27DE00747966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3329407F9745EF3E41A1DF00 /* Pods_Rosnic_ka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F16C4E2E2A2CDD232018E0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C1939CF301201DE0A4F423 /* Pods_Rosnic_ka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCFE0BF99898A30E61C83197 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				417ABEDC24BE43E19F024FB6 /* Pods-Rosnička.debug.xcconfig */,
+				AAD1C478BA4CCACF5CA8BD24 /* Pods-Rosnička.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F647ECD61F4C27DE00747966 = {
 			isa = PBXGroup;
 			children = (
 				F647ECE11F4C27DE00747966 /* Rosnička */,
 				F647ECE01F4C27DE00747966 /* Products */,
+				BCFE0BF99898A30E61C83197 /* Pods */,
+				4F16C4E2E2A2CDD232018E0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F647ECF11F4C27DE00747966 /* Build configuration list for PBXNativeTarget "Rosnička" */;
 			buildPhases = (
+				8F13812052784C5EC90685D9 /* [CP] Check Pods Manifest.lock */,
 				F647ECDB1F4C27DE00747966 /* Sources */,
 				F647ECDC1F4C27DE00747966 /* Frameworks */,
 				F647ECDD1F4C27DE00747966 /* Resources */,
+				4605440CCFA9460D074BEEBE /* [CP] Embed Pods Frameworks */,
+				5192149D066AB211553A8B31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4605440CCFA9460D074BEEBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rosnička/Pods-Rosnička-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rosnička/Pods-Rosnička-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5192149D066AB211553A8B31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rosnička/Pods-Rosnička-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F13812052784C5EC90685D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rosnička-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F647ECDB1F4C27DE00747966 /* Sources */ = {
@@ -261,6 +342,7 @@
 		};
 		F647ECF21F4C27DE00747966 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417ABEDC24BE43E19F024FB6 /* Pods-Rosnička.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8S9A67SJKZ;
@@ -275,6 +357,7 @@
 		};
 		F647ECF31F4C27DE00747966 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD1C478BA4CCACF5CA8BD24 /* Pods-Rosnička.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8S9A67SJKZ;
